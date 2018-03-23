@@ -83,11 +83,6 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.8-dmr</version>
         </dependency>
-        <dependency>
-            <groupId>org.wso2.patchvalidator</groupId>
-            <artifactId>patchsigner</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
     </dependencies>
     <properties>
         <microservice.mainClass>org.wso2.patchvalidator.service.Application</microservice.mainClass>
