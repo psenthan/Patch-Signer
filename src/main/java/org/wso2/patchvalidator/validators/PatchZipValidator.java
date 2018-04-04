@@ -68,8 +68,8 @@ public class PatchZipValidator implements CommonValidator {
     private static final int BUFFER_SIZE = 4096;
     private static final Logger LOG = LoggerFactory.getLogger(CommonValidator.class);
     static final Properties prop = new Properties();
-    private String username = "patchsigner@wso2.com";
-    private String password = "xcbh8=cfj0mfgsOekDbh";
+    private String username = "";
+    private String password = "";
     private boolean securityPatch = true;
     private boolean isPatchEmpty = false;
 
@@ -381,8 +381,8 @@ public class PatchZipValidator implements CommonValidator {
 
     public static String commitKeys(String url, String fileLocation) {
         File file = new File(fileLocation);
-        String username = "patchsigner@wso2.com";
-        String password = "xcbh8=cfj0mfgsOekDbh";
+        String username = "";
+        String password = "";
 
         String checkConnectivity = SVNConnection(url, username, password);
         if (checkConnectivity.trim().equals(Constants.CONNECTION_SUCCESSFUL)) {
